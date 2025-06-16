@@ -9,7 +9,7 @@ namespace Notes
         public AppShell()
         {
             InitializeComponent();
-            var currentTheme = Application.Current!.RequestedTheme;
+            
             ThemeSegmentedControl.SelectedIndex = currentTheme == AppTheme.Light ? 0 : 1;
         }
         public static async Task DisplaySnackbarAsync(string message)
